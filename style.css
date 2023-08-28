@@ -50,6 +50,10 @@ header {
     }
 }
 
+img {
+    width: 200px;
+}
+
 .logoDash {
     font-size: 2rem;
     color: rgb(0, 255, 149);
@@ -106,6 +110,15 @@ h3 {
 }
 
 @media (max-width: 800px) {
+    img {
+        width: 125px;
+        animation: 1.5s fadein
+    }
+
+    .logo {
+        animation: 1.5s fadein
+    }
+
     .descriptor {
         text-align: center;
     }
@@ -131,7 +144,7 @@ h3 {
     }
 
     .blurb {
-        margin-top: 1rem;
+        margin-top: 5rem;
     }
 
     h3 {
