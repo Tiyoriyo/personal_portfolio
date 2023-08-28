@@ -1,9 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: #141414;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 h1 {
     display: block;
-    background-color: brown;
-    width: 80vh;
     color: white;
     padding: 25px;
-    border-radius: 15px;
-    font-style: italic;
+    /* font-family: 'Roboto Mono', monospace; */
+    font-family: monospace;
+    font-size: 5rem;
+    text-shadow: 5px 5px rgb(143, 143, 143);
+    user-select: none;
+}
+
+.iconContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 33vh;
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    /* background-color: rgb(250, 250, 250); */
 }
