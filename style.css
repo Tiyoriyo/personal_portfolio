@@ -1,0 +1,9 @@
+h1 {
+    display: block;
+    background-color: brown;
+    width: 80vh;
+    color: white;
+    padding: 25px;
+    border-radius: 15px;
+    font-style: italic;
+}
