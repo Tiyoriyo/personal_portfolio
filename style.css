@@ -11,6 +11,7 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
+    gap: 3rem;
 }
 
 header {
@@ -82,6 +83,28 @@ header {
     transform-origin: left;
 }
 
+.lightGreen {
+    color: rgb(0, 255, 149);
+}
+
+.blurb {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 5rem;
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.codeLight {
+    color: rgb(174, 245, 215);
+}
+
+h3 {
+    text-align: center;
+}
+
 @media (max-width: 800px) {
     .descriptor {
         text-align: center;
@@ -107,11 +130,19 @@ header {
         }
     }
 
-    
-}
+    .blurb {
+        margin-top: 1rem;
+    }
 
-.codeLight {
-    color: rgb(174, 245, 215);
+    h3 {
+        font-size: 0.8rem;
+    }
+
+    h5 {
+        font-size: 0.8rem;
+        text-align: center;
+    }
+    
 }
 
 .iconContainer {
