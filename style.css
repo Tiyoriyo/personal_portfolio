@@ -132,6 +132,10 @@ h3 {
     box-shadow: 5px 5px rgb(128, 128, 128, 0.2);
 }
 
+.headerBtn:active {
+    box-shadow: none;
+}
+
 @media (max-width: 800px) {
     img {
         width: 125px;
