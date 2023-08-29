@@ -111,6 +111,27 @@ h3 {
     text-align: center;
 }
 
+.buttonContainer {
+    display: flex;
+    gap: 1rem;
+}
+
+.headerBtn {
+    appearance: none;
+    margin-top: 2rem;
+    font-family: monospace;
+    padding: 5px 5px;
+    background-color: rgb(0, 255, 149);
+    border-radius: 3px;
+    border: 1px solid grey;
+    box-shadow: 5px 5px rgb(128, 128, 128, 0.4);
+}
+
+.headerBtn:hover {
+    background-color: hwb(155 1% 14%);
+    box-shadow: 5px 5px rgb(128, 128, 128, 0.2);
+}
+
 @media (max-width: 800px) {
     img {
         width: 125px;
