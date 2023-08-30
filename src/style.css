@@ -31,8 +31,8 @@ header {
 }
 
 .logo {
-    font-size: 5rem;
     color: white;
+    font-size: 5rem;
     font-family: 'Times New Roman', Times, serif;
     text-shadow: 5px 5px rgb(143, 143, 143);
     padding: 2rem;
@@ -41,38 +41,42 @@ header {
     transform-origin: left;
 }
 
-.logoDash {
-    font-size: 1.5rem;
+.l-dash {
     color: rgb(0, 255, 149);
+    font-size: 1.5rem;
 }
 
-img {
+.a-container {
     width: 200px;
     border-bottom: 1px solid white;
     border-top: 1px solid white;
 }
 
-.descriptor {
-    display: block;
+.h-descriptor {
     color: white;
-    padding: 25px;
     font-family: monospace;
     font-size: 1rem;
-    user-select: none;
     font-weight: 100;
     font-style: italic;
+    padding: 1.5rem;
+
     animation: 1s spawn;
     transform-origin: left;
 }
 
-.codeArt {
+.h-code {
     color: rgb(0, 255, 149);
+
     animation: 1s spawn;
     transform-origin: left;
 }
 
-.lightGreen {
+.l-green {
     color: rgb(0, 255, 149);
+}
+
+.c-green {
+    color: rgb(174, 245, 215);
 }
 
 .blurb {
@@ -81,40 +85,35 @@ img {
     align-items: center;
     gap: 1rem;
     margin-top: 5rem;
+    
     color: white;
-    font-family: 'Roboto Mono', monospace;
+    font-size: 0.9rem;
+    font-family: monospace
 }
 
-.codeLight {
-    color: rgb(174, 245, 215);
-}
-
-h3 {
-    text-align: center;
-}
-
-.buttonContainer {
+.b-container {
     display: flex;
     gap: 1rem;
 }
 
-.headerBtn {
+.h-btn {
     appearance: none;
-    margin-top: 2rem;
     font-family: monospace;
-    padding: 5px 5px;
     background-color: rgb(0, 255, 149);
-    border-radius: 3px;
+
+    margin-top: 2rem;
+    padding: 5px 5px;
     border: 1px solid grey;
+    border-radius: 3px;
     box-shadow: 5px 5px rgb(128, 128, 128, 0.4);
 }
 
-.headerBtn:hover {
+.h-btn:hover {
     background-color: hwb(155 1% 14%);
     box-shadow: 5px 5px rgb(128, 128, 128, 0.2);
 }
 
-.headerBtn:active {
+.h-btn:active {
     box-shadow: none;
 }
 
