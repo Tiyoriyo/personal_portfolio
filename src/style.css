@@ -65,8 +65,6 @@ header {
 }
 
 .h-code {
-    color: rgb(0, 255, 149);
-
     animation: 1s spawn;
     transform-origin: left;
 }
@@ -118,31 +116,38 @@ header {
 }
 
 @media (max-width: 800px) {
-    img {
+    .a-container {
         width: 125px;
         animation: 1.5s fadein
+    }
+
+    header {
+        padding-top: 1rem
     }
 
     .logo {
         animation: 1.5s fadein
     }
 
-    .descriptor {
+    .h-descriptor {
         text-align: center;
+        font-size: 0.8rem;
     }
 
-    .codeArt {
+    .h-code {
         text-align: center;
-        margin: 50px;
+        margin: 1rem;
 
     }
 
-    .codeArt, .descriptor {
+    .h-code, .descriptor {
         animation: 1.5s fadein;
     }
 
     .blurb {
-        margin-top: 5rem;
+        margin-top: 2rem;
+        text-align: center;
+        width: 80%;
     }
 
     h3 {
@@ -150,13 +155,17 @@ header {
     }
 
     h5 {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
         text-align: center;
+    }
+
+    .b-container {
+        margin-top: 1rem;
     }
     
 }
 
-.iconContainer {
+/* .iconContainer {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
@@ -164,8 +173,8 @@ header {
     padding: 1rem;
     border: 1px solid black;
     border-radius: 0.5rem;
-    /* background-color: rgb(250, 250, 250); */
-}
+    /* background-color: rgb(250, 250, 250); 
+} */
 
 /* ANIMATIONS LIST */
 
