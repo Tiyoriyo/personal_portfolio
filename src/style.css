@@ -46,7 +46,7 @@ header {
     font-size: 1.5rem;
 }
 
-.a-container {
+.a-img {
     width: 200px;
     border-bottom: 1px solid white;
     border-top: 1px solid white;
@@ -89,34 +89,29 @@ header {
     font-family: monospace
 }
 
-.b-container {
+.s-container {
     display: flex;
-    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 4rem;
+    animation: 4s breathing infinite;
 }
 
-.h-btn {
-    appearance: none;
+.scroll-t {
+    color: white;
     font-family: monospace;
-    background-color: rgb(0, 255, 149);
+    font-weight: bold;
 
-    margin-top: 2rem;
-    padding: 5px 5px;
-    border: 1px solid grey;
-    border-radius: 3px;
-    box-shadow: 5px 5px rgb(128, 128, 128, 0.4);
+    animation: 4s breathing infinite;
 }
 
-.h-btn:hover {
-    background-color: hwb(155 1% 14%);
-    box-shadow: 5px 5px rgb(128, 128, 128, 0.2);
-}
-
-.h-btn:active {
-    box-shadow: none;
+.s-img {
+    width: 25px;
 }
 
 @media (max-width: 800px) {
-    .a-container {
+    .a-img {
         width: 125px;
         animation: 1.5s fadein
     }
@@ -157,12 +152,7 @@ header {
     h5 {
         font-size: 0.7rem;
         text-align: center;
-    }
-
-    .b-container {
-        margin-top: 1rem;
-    }
-    
+    }    
 }
 
 /* .iconContainer {
@@ -210,5 +200,19 @@ header {
     }
     75% {
         transform: skew(0deg)
+    }
+}
+
+@keyframes breathing {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
     }
 }
