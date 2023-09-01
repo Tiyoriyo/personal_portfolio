@@ -110,7 +110,7 @@ header {
     width: 25px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
     .a-img {
         width: 125px;
         animation: 1.5s fadein
