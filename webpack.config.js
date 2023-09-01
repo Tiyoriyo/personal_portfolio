@@ -1,7 +1,15 @@
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { Template } = require('webpack');
 
 module.exports = {
     entry: './src/index.js',
+    plugins: [
+        new HtmlWebpackPlugin({
+            title: `V's Personal Portfolio`,
+            template: 'src/index.html',
+        }),
+    ],
     output: {
         filename: 'main.js',
         path: path.resolve(__dirname, 'dist'),
