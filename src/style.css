@@ -163,15 +163,46 @@ main {
 }
 
 .p-section {
+    align-self: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
     color: white;
     font-family: monospace;
+    max-width: 1000px;
+    margin-top: 5rem;
 }
 
 .p-stack {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
 
+.p-block {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 }
 
 .p-card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(128, 128, 128);
+    width: 300px;
+    height: max-content;
+    overflow: hidden;
+}
+
+.p-img {
+
+}
+
+.p-card-icons {
+    display: flex;
 
 }
 
