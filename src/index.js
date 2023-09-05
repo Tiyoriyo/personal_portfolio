@@ -15,6 +15,9 @@ import signup from './assets/Screenshots/signup.png';
 import tic from './assets/Screenshots/tic.png';
 import weather from './assets/Screenshots/weather.png';
 
+// SVG
+import linkedinSVG from './assets/linkedin.svg';
+
 
 // Header Image Injection
 const avatarImg = document.querySelector('.a-img');
@@ -41,5 +44,11 @@ restaurantImg.src = restaurant;
 signupImg.src = signup;
 ticImg.src = tic;
 weatherImg.src = weather;
+
+// SVG loader
+// let lnSVG = document.querySelector('.lnSVG');
+// lnSVG.src = linkedinSVG;
+// console.log(linkedinSVG);
+
 
 document.body.style.display = 'flex'
