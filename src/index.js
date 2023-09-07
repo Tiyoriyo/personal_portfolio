@@ -15,9 +15,6 @@ import signup from './assets/Screenshots/signup.png';
 import tic from './assets/Screenshots/tic.png';
 import weather from './assets/Screenshots/weather.png';
 
-// SVG
-import linkedinSVG from './assets/linkedin.svg';
-
 
 // Header Image Injection
 const avatarImg = document.querySelector('.a-img');

@@ -244,6 +244,11 @@ main {
     overflow: hidden;
 }
 
+.p-img {
+    display: flex;
+    width: 100%;
+}
+
 .p-block:hover {
     
 }
@@ -272,6 +277,12 @@ main {
 
     max-width: 700px;
     margin-top: 5rem;
+}
+
+.title-section {
+    display: flex;
+    align-items: flex-end;
+    gap: 0.5rem;
 }
 
 .a-title {
