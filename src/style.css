@@ -124,7 +124,8 @@ header {
     align-items: center;
     gap: 0.5rem;
     margin-top: 3rem;
-    animation: 4s breathing infinite;
+    animation: 0.5s fadein,
+    4s 0.5s breathing infinite;
 }
 
 .scroll-t {
@@ -132,11 +133,30 @@ header {
     font-family: monospace;
     font-weight: bold;
 
-    animation: 4s breathing infinite;
 }
 
 .s-img {
     width: 25px;
+}
+
+.scrollActive {
+    animation: 0.5s fadeaway;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeaway {
+    to {
+        opacity: 0%;
+    }
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0%;
+    }
+    to {
+        opacity: 100%;
+    }
 }
 
 main {

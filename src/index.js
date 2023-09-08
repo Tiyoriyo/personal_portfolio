@@ -42,10 +42,14 @@ signupImg.src = signup;
 ticImg.src = tic;
 weatherImg.src = weather;
 
-// SVG loader
-// let lnSVG = document.querySelector('.lnSVG');
-// lnSVG.src = linkedinSVG;
-// console.log(linkedinSVG);
+// Scroll Down Container
+const scrollCont = document.querySelector('.s-container');
 
-
-// document.body.style.display = 'flex'
+window.addEventListener('scroll', () => {
+   const scrollCheck = (document.scrollingElement.scrollTop > 0) ? true : false;
+   if (scrollCheck) {
+    scrollCont.classList.add('scrollActive');
+   } else {
+    scrollCont.classList.remove('scrollActive');
+   }
+});
