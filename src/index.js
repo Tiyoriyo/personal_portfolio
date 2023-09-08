@@ -48,4 +48,4 @@ weatherImg.src = weather;
 // console.log(linkedinSVG);
 
 
-document.body.style.display = 'flex'
+// document.body.style.display = 'flex'
