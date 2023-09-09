@@ -6,7 +6,7 @@
     <title>V's Personal Portfolio</title>
     <script src="main.js" defer></script>
 </head>
-<body>
+<body style="display: none;">
     <header class="noselect">
         <h1 class="logo">
             <span class="l-dash">-</span>
@@ -15,30 +15,20 @@
         </h1>
         <img class="a-img" draggable="false">
         <h2 class="h-descriptor">websites-  music - media - gaming - bjj - martialarts</h2>
-        <!-- <code class="h-code l-green type" style="--n:53">
-            const <span class="c-light">v</span> = {
-                name: <span class="c-green">'vadim_kostrov',</span>
-                status: <span class="c-green">'making_moves',</span>
-                studying: <span class="c-green">'the_odin_project',</span>
-            };<span class="c-indent"> |</span>
-
-        </code> -->
-
-        <div class="h-codeT l-green">
-            <span>const <span class="c-green">v</span> = {</span>
-            <span style="margin-left: 1rem;">name: '<span class="c-green">vadim_kostrov</span>',</span>
-            <span style="margin-left: 1rem;">status: '<span class="c-green">making_moves</span>',</span>
+        <div class="h-code-t c-green">
+            <span>const <span class="l-green">v</span> = {</span>
+            <span style="margin-left: 1rem;">name: '<span class="l-green">vadim_kostrov</span>',</span>
+            <span style="margin-left: 1rem;">status: '<span class="l-green">making_moves</span>',</span>
             <span style="margin-left: 1rem;">studying: '<span class="c-green">the_odin_project</span>',</span>
             <span>} <span class="c-indent">|</span></span>
-
         </div>
         <div class="blurb">
             <h3>i am a 
-                <span class="l-green">web developer </span>
+                <span class="c-green">web developer </span>
                 that makes 
-                <span class="l-green">slick designs </span> 
+                <span class="c-green">slick designs </span> 
                 and 
-                <span class="l-green">interesting websites </span>
+                <span class="c-green">interesting websites </span>
             </h3>
             <h5>my general aim is somewhere along the lines of game development or ai</h5>
         </div>
@@ -48,7 +38,7 @@
         </div>
     </header>
     <main>
-        <div class="s-section">
+        <div class="s-section noselect">
             <div class="title-section s-title">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20px"><title>hammer-wrench</title><path fill='white' d="M13.78 15.3L19.78 21.3L21.89 19.14L15.89 13.14L13.78 15.3M17.5 10.1C17.11 10.1 16.69 10.05 16.36 9.91L4.97 21.25L2.86 19.14L10.27 11.74L8.5 9.96L7.78 10.66L6.33 9.25V12.11L5.63 12.81L2.11 9.25L2.81 8.55H5.62L4.22 7.14L7.78 3.58C8.95 2.41 10.83 2.41 12 3.58L9.89 5.74L11.3 7.14L10.59 7.85L12.38 9.63L14.2 7.75C14.06 7.42 14 7 14 6.63C14 4.66 15.56 3.11 17.5 3.11C18.09 3.11 18.61 3.25 19.08 3.53L16.41 6.2L17.91 7.7L20.58 5.03C20.86 5.5 21 6 21 6.63C21 8.55 19.45 10.1 17.5 10.1Z" /></svg>
                 <h3>skills</h3>
@@ -109,12 +99,12 @@
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20px"><title>card-account-details</title><path fill='white' d="M2,3H22C23.05,3 24,3.95 24,5V19C24,20.05 23.05,21 22,21H2C0.95,21 0,20.05 0,19V5C0,3.95 0.95,3 2,3M14,6V7H22V6H14M14,8V9H21.5L22,9V8H14M14,10V11H21V10H14M8,13.91C6,13.91 2,15 2,17V18H14V17C14,15 10,13.91 8,13.91M8,6A3,3 0 0,0 5,9A3,3 0 0,0 8,12A3,3 0 0,0 11,9A3,3 0 0,0 8,6Z" /></svg>
                 <h3>about me</h3>
             </div>
-            <p class="a-para"><span class="l-green">Education:</span> University of Exeter, <span class="l-green">BSc</span> Business & Management</p>
-            <p class="a-para">I am a <span class="l-green">Russian</span> born, <span class="l-green">Dubai</span> bred, <span class="l-green">self-taught</span> web developer. I live in Dubai and I am currently dedicating my time to an open-source, project-based, web development course called <a href="https://www.theodinproject.com/" style="text-decoration: underline;" class="l-green">the odin project</a>.</p>
-            <p class="a-para">I have always wanted to <span class="l-green">code</span> since I was a kid. My dream was to build an open-world survival game as I had always enjoyed games like <span class="l-green">DayZ</span>, <span class="l-green">Minecraft</span> and <span class="l-green">Rust</span> growing up. I never put any effort past a couple of lines of code and a sweet <span class="l-green">print('Hello World!');</span> and so I ended up scrapping that dream, moving on to topics like <span class="l-green">business</span>. I became content with being a <span class="l-green">consumer</span> rather than a <span class="l-green">producer</span> of games, learning how to code is not easy.</p>
-            <p class="a-para">During my last year in <span class="l-green">University</span>, my friend and I reminisced about the good old days when we used to <span class="l-green">dream about making video games</span>, the conversation of which was fueled by our <span class="l-green">discontentment:</span> over the modern video <span class="l-green">gaming industry</span>. We both agreed that it was a shame that we never pulled through with the minimum, <span class="l-green">learning how to code</span>, and from then on we sorta just agreed to make it happen, and ever since then I have been taking it upon myself to learn <span class="l-green">web development.</span></p>
-            <p class="a-para">I really enjoyed <span class="l-green">web development</span>, I love making websites and adding <span class="l-green">minimal css styles</span> in order to assentuate the <span class="l-green">small things</span>, such as this <span class="l-green">vertical dashed line</span> next to this paragraph. Creating <span class="l-green">functional tools</span> like my to-do-list application was really fun as well, it goes without saying that <span style="color: rgb(255, 45, 45); text-shadow: 5px 5px 2px rgb(255, 41, 41, 0.5);">it was frustrating too..</span></p>
-            <p class="a-para">I did say my <span class="l-green">general aim</span> was games development, or AI, but to be <span class="l-green">honest with you</span>, I don't know. <span class="l-green">The coding world</span> looks huge from my little porthole over here, and I am finding a lot of value in the web development side of things, so we'll have to see later. <span class="l-green" style="text-shadow: 5px 5px 2px rgba(58, 255, 91, 0.226);">So far I'm here to stay!</span></p>
+            <p class="a-para"><span class="c-green">Education:</span> University of Exeter, <span class="c-green">BSc</span> Business & Management</p>
+            <p class="a-para">I am a <span class="c-green">Russian</span> born, <span class="c-green">Dubai</span> bred, <span class="c-green">self-taught</span> web developer. I live in Dubai and I am currently dedicating my time to an open-source, project-based, web development course called <a href="https://www.theodinproject.com/" style="text-decoration: underline;" class="c-green">the odin project</a>.</p>
+            <p class="a-para">I have always wanted to <span class="c-green">code</span> since I was a kid. My dream was to build an open-world survival game as I had always enjoyed games like <span class="c-green">DayZ</span>, <span class="c-green">Minecraft</span> and <span class="c-green">Rust</span> growing up. I never put any effort past a couple of lines of code and a sweet <span class="c-green">print('Hello World!');</span> and so I ended up scrapping that dream, moving on to topics like <span class="c-green">business</span>. I became content with being a <span class="c-green">consumer</span> rather than a <span class="c-green">producer</span> of games, learning how to code is not easy.</p>
+            <p class="a-para">During my last year in <span class="c-green">University</span>, my friend and I reminisced about the good old days when we used to <span class="c-green">dream about making video games</span>, the conversation of which was fueled by our <span class="c-green">discontentment:</span> over the modern video <span class="c-green">gaming industry</span>. We both agreed that it was a shame that we never pulled through with the minimum, <span class="c-green">learning how to code</span>, and from then on we sorta just agreed to make it happen, and ever since then I have been taking it upon myself to learn <span class="c-green">web development.</span></p>
+            <p class="a-para">I really enjoyed <span class="c-green">web development</span>, I love making websites and adding <span class="l-green">minimal css styles</span> in order to assentuate the <span class="l-green">small things</span>, such as this <span class="c-green">vertical dashed line</span> next to this paragraph. Creating <span class="c-green">functional tools</span> like my to-do-list application was really fun as well, it goes without saying that <span style="color: rgb(255, 45, 45); text-shadow: 5px 5px 2px rgb(255, 41, 41, 0.5);">it was frustrating too..</span></p>
+            <p class="a-para">I did say my <span class="c-green">general aim</span> was games development, or AI, but to be <span class="c-green">honest with you</span>, I don't know. <span class="c-green">The coding world</span> looks huge from my little porthole over here, and I am finding a lot of value in the web development side of things, so we'll have to see later. <span class="c-green" style="text-shadow: 5px 5px 2px rgba(58, 255, 91, 0.226);">So far I'm here to stay!</span></p>
         </div>
         <div class="p-section">
             <div class="title-section p-title">
@@ -128,11 +118,6 @@
                         <a href="https://github.com/Tiyoriyo/to-do-list">
                             <img class="p-img p-todo" href="https://github.com/Tiyoriyo/to-do-list">
                         </a>
-                        
-                        <div class="p-card-icons">
-                            <img>
-                            <img>
-                        </div>
                     </div>
                 </div>
                 <div class="p-block">

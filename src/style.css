@@ -3,27 +3,13 @@
     padding: 0;
 }
 
-.noselect {
-  -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-     -khtml-user-select: none; /* Konqueror HTML */
-       -moz-user-select: none; /* Old versions of Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none; /* Non-prefixed version, currently
-                                  supported by Chrome, Edge, Opera and Firefox */
-}
-
 html {
     background-color: #141414;
-  
-    
-
 }
 
 body {
-    height: 100vh;
-    display: flex;
     flex-direction: column;
+    height: 100vh;
 }
 
 header {
@@ -33,15 +19,47 @@ header {
     padding-top: 4rem;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+    width: 100%;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+/* Universal Style */
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+}
+
+.c-green {
+    color: rgb(0, 255, 149) !important;
+}
+
+/* Header Styles */
+/* - V - Logo Styles */
+
 .logo {
-    color: white;
     font-size: 5rem;
     font-family: 'Times New Roman', Times, serif;
+    color: white;
     text-shadow: 5px 5px rgb(143, 143, 143);
-    padding: 2rem;
-
+    padding: 1rem;
     animation: 2s slidein;
-    transform-origin: left;
 }
 
 .l-dash {
@@ -49,11 +67,15 @@ header {
     font-size: 1.5rem;
 }
 
+/* Avatar Styles */
+
 .a-img {
     width: 200px;
-    border-bottom: 1px solid white;
     border-top: 1px solid white;
+    border-bottom: 1px solid white;
 }
+
+/* Descriptor Styles */
 
 .h-descriptor {
     color: white;
@@ -62,20 +84,11 @@ header {
     font-weight: 100;
     font-style: italic;
     padding: 1.5rem;
-
-    animation: 1s spawn;
-    transform-origin: left;
 }
 
-.h-code {
-    max-width: 300px;
-    text-align: center;
+/* Header Code Styles */
 
-    animation: 1s spawn;
-    transform-origin: left;
-}
-
-.h-codeT {
+.h-code-t {
     font-size: 0.8rem;
     color: white;
     font-family: monospace;
@@ -85,26 +98,15 @@ header {
     border-left: 1px dashed rgb(153, 153, 153);
 }
 
-.type {
-    background-color: #141414;
-    background-size: calc(var(--n)*1ch) 200%;
-    -webkit-background-clip: padding-box, text;
-    background-clip: padding-box, text;
-    background-repeat: no-repeat;
-    animation: b .7s infinite steps(1), t calc(var(--n)*.3s) steps(var(--n)) forwards;
-}
-
 .l-green {
-    color: rgb(0, 255, 149);
-}
-
-.c-green {
     color: rgb(174, 245, 215);
 }
 
 .c-indent {
     animation: 1s fastBreathing infinite;
 }
+
+/* Blurb Styles */
 
 .blurb {
     display: flex;
@@ -118,12 +120,15 @@ header {
     font-family: monospace
 }
 
+/* Scroll Down Image Styles */
+
 .s-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 0.5rem;
-    margin-top: 3rem;
+    margin-top: 4rem;
+
     animation: 0.5s fadein,
     4s 0.5s breathing infinite;
 }
@@ -144,36 +149,13 @@ header {
     animation-fill-mode: both;
 }
 
-@keyframes fadeaway {
-    to {
-        opacity: 0%;
-    }
-}
-
-@keyframes fadein {
-    from {
-        opacity: 0%;
-    }
-    to {
-        opacity: 100%;
-    }
-}
-
-main {
-    display: flex;
-    flex-direction: column;
-    margin-top: 5rem;
-    width: 100%;
-}
+/* Skills Section */
 
 .s-section {
-    align-self: center;
-
     display: flex;
     flex-direction: column;
     gap: 1rem;
     color: white;
-
     font-family: monospace;
 }
 
@@ -183,21 +165,19 @@ main {
 
 .s-stack {
     display: flex;
-    justify-content: center;
-    gap: 1rem;
-    max-width: 700px;
+    justify-content: center; 
+    gap: 1rem; 
     flex-wrap: wrap;
+    max-width: 700px;
 
     border-left: 1px dashed rgb(255, 255, 255, 0.5);
     border-right: 1px dashed rgb(255, 255, 255, 0.5);
-    padding-bottom: 1rem;
 }
 
 .s-card {
     display: flex;
     align-items: center;
-    gap: 10px;
-
+    gap: 0.8rem;
     width: 125px;
     height: 25px;
     padding: 5px 15px;
@@ -206,19 +186,47 @@ main {
 }
 
 .s-card:hover {
-    animation: 0.25s p-enlarge;
-    animation-fill-mode: both;
     border: 1px solid rgb(223, 223, 223);
     font-weight: bold;
+    animation: 0.25s p-enlarge;
+    animation-fill-mode: both;
 }
 
-.p-section {
-    align-self: center;
+/* About Me Styles */
 
+.a-section { 
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    color: white;
+    font-family: monospace;
+    max-width: 700px;
+    margin-top: 5rem;
+}
 
+.title-section {
+    display: flex;
+    align-items: flex-end;
+    gap: 0.5rem;
+}
+
+.a-title {
+    border-bottom: 1px solid rgb(255, 255, 255, 0.5);
+}
+
+
+.a-para {
+    font-style: italic;
+    padding-left: 1rem;
+    border-left: 1px dashed rgb(255, 255, 255, 0.5);
+}
+
+/* Projects Section Styles */
+
+.p-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
     color: white;
     font-family: monospace;
     max-width: 700px;
@@ -227,7 +235,6 @@ main {
 
 .p-title {
     border-bottom: 1px solid rgb(255, 255, 255, 0.5);
-    max-width: 700px;
 }
 
 .p-stack {
@@ -272,57 +279,10 @@ main {
     animation-direction: alternate;
 }
 
-.p-card-icons {
-    display: flex;
-
-}
-
-.a-section {
-    align-self: center;
-    
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-
-    color: white;
-    font-family: monospace;
-
-    max-width: 700px;
-    margin-top: 5rem;
-}
-
-.title-section {
-    display: flex;
-    align-items: flex-end;
-    gap: 0.5rem;
-}
-
-.a-title {
-    border-bottom: 1px solid rgb(255, 255, 255, 0.5);
-}
-
-
-.a-para {
-    font-style: italic;
-    padding-left: 1rem;
-    border-left: 1px dashed rgb(255, 255, 255, 0.5);
-}
-
-footer {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 5rem;
-    padding: 2rem;
-    /* background-color: #242424; */
-}
-
 .footerIcon:hover {
     animation: 0.25s fi-enlarge;
     animation-fill-mode: both;
 }
-
-
 
 @media (max-width: 1000px) {
     .a-img {
@@ -446,10 +406,17 @@ footer {
     }
 }
 
-@keyframes t {
-    from {background-size: 0 200%;}
+@keyframes fadeaway {
+    to {
+        opacity: 0%;
+    }
 }
 
-@keyframes b {
-    50% {background-position: 0 -100%, 0 0;}
+@keyframes fadein {
+    from {
+        opacity: 0%;
+    }
+    to {
+        opacity: 100%;
+    }
 }

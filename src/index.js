@@ -53,3 +53,6 @@ window.addEventListener('scroll', () => {
     scrollCont.classList.remove('scrollActive');
    }
 });
+
+
+document.body.style.display = 'flex';
