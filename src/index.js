@@ -2,7 +2,7 @@ import '../src/style.css'
 
 // Header Images
 import avatar from './assets/avatar.jpg';
-import arrowDown from './assets/scrollDown.png';
+// import arrowDown from './assets/scrollDown.png';
 
 // Project Images
 import todo from './assets/Screenshots/todo.png';
@@ -18,9 +18,9 @@ import weather from './assets/Screenshots/weather.png';
 
 // Header Image Injection
 const avatarImg = document.querySelector('.a-img');
-const scrollImg = document.querySelector('.s-img');
+// const scrollImg = document.querySelector('.s-img');
 avatarImg.src = avatar;
-scrollImg.src = arrowDown
+// scrollImg.src = arrowDown
 
 //Project Image Injection
 const todoImg = document.querySelector('.p-todo');
@@ -45,14 +45,14 @@ weatherImg.src = weather;
 // Scroll Down Container
 const scrollCont = document.querySelector('.s-container');
 
-window.addEventListener('scroll', () => {
-   const scrollCheck = (document.scrollingElement.scrollTop > 0) ? true : false;
-   if (scrollCheck) {
-    scrollCont.classList.add('scrollActive');
-   } else {
-    scrollCont.classList.remove('scrollActive');
-   }
-});
+// window.addEventListener('scroll', () => {
+//    const scrollCheck = (document.scrollingElement.scrollTop > 0) ? true : false;
+//    if (scrollCheck) {
+//     scrollCont.classList.add('scrollActive');
+//    } else {
+//     scrollCont.classList.remove('scrollActive');
+//    }
+// });
 
 
 document.body.style.display = 'flex';

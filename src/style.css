@@ -1,101 +1,94 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: monospace;
+}
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently */
 }
 
 html {
     background-color: #141414;
+    color: white;
+}
+
+body, header, main, footer {
+    display: flex;
+    align-items: center;
+}
+
+body, header, main {
+    flex-direction: column;
+}
+
+header, main, footer {
+    width: 90%;
+    max-width: 60rem;
 }
 
 body {
-    flex-direction: column;
-    height: 100vh;
 }
 
 header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 4rem;
-}
-
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 5rem;
-    width: 100%;
+    gap: 1rem;
+    margin-bottom: 5rem;
 }
 
 footer {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    padding: 2rem;
-}
-
-/* Universal Style */
-
-.noselect {
-    -webkit-touch-callout: none; /* iOS Safari */
-      -webkit-user-select: none; /* Safari */
-       -khtml-user-select: none; /* Konqueror HTML */
-         -moz-user-select: none; /* Old versions of Firefox */
-          -ms-user-select: none; /* Internet Explorer/Edge */
-              user-select: none; /* Non-prefixed version, currently
-                                    supported by Chrome, Edge, Opera and Firefox */
-}
-
-.c-green {
-    color: rgb(0, 255, 149) !important;
+    gap: 0.5rem;
 }
 
 /* Header Styles */
-/* - V - Logo Styles */
 
 .logo {
-    font-size: 5rem;
     font-family: 'Times New Roman', Times, serif;
-    color: white;
-    text-shadow: 5px 5px rgb(143, 143, 143);
-    padding: 1rem;
-    animation: 2s slidein;
+    font-size: 6rem;
 }
 
 .l-dash {
     color: rgb(0, 255, 149);
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
-/* Avatar Styles */
-
 .a-img {
-    width: 200px;
+    /* max-width: 15rem; */
+    width: clamp(5rem, 50%, 17rem);
     border-top: 1px solid white;
     border-bottom: 1px solid white;
 }
 
-/* Descriptor Styles */
-
-.h-descriptor {
-    color: white;
-    font-family: monospace;
-    font-size: 1rem;
-    font-weight: 100;
-    font-style: italic;
-    padding: 1.5rem;
+.h-descriptor, .h-code-t, .blurb, .s-container {
+    text-align: center;
 }
 
-/* Header Code Styles */
-
 .h-code-t {
-    font-size: 0.8rem;
-    color: white;
-    font-family: monospace;
     display: flex;
-    padding-left: 1rem;
     flex-direction: column;
-    border-left: 1px dashed rgb(153, 153, 153);
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 0.2rem;
+    border-left: 1px dashed rgba(255, 255, 255, 0.548);
+    padding-left: 1rem;
+}
+
+.c-field {
+    margin-left: 1rem;
+}
+
+@media (max-width: 300px) {
+    .c-field {
+        margin-left: 0;
+    }
+}
+
+.c-green {
+    color: rgb(0, 255, 149)
 }
 
 .l-green {
@@ -103,320 +96,119 @@ footer {
 }
 
 .c-indent {
-    animation: 1s fastBreathing infinite;
+    animation: 1s c-breathing infinite;
+    animation-fill-mode: both;
 }
 
-/* Blurb Styles */
+.h-descriptor {
+    font-size: clamp(1rem, 1vh, 2rem)
+}
 
 .blurb {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    margin-top: 5rem;
-    
-    color: white;
-    font-size: 0.9rem;
-    font-family: monospace
-}
-
-/* Scroll Down Image Styles */
-
-.s-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     gap: 0.5rem;
-    margin-top: 4rem;
-
-    animation: 0.5s fadein,
-    4s 0.5s breathing infinite;
 }
 
-.scroll-t {
-    color: white;
-    font-family: monospace;
-    font-weight: bold;
+/* Skills Styles */
 
-}
-
-.s-img {
-    width: 25px;
-}
-
-.scrollActive {
-    animation: 0.5s fadeaway;
-    animation-fill-mode: both;
-}
-
-/* Skills Section */
-
-.s-section {
+.s-section, .a-section {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-    color: white;
-    font-family: monospace;
-}
-
-.s-title {
-    border-bottom: 1px solid rgb(255, 255, 255, 0.5);
-}
-
-.s-stack {
-    display: flex;
-    justify-content: center; 
-    gap: 1rem; 
-    flex-wrap: wrap;
-    max-width: 700px;
-
-    border-left: 1px dashed rgb(255, 255, 255, 0.5);
-    border-right: 1px dashed rgb(255, 255, 255, 0.5);
-}
-
-.s-card {
-    display: flex;
-    align-items: center;
-    gap: 0.8rem;
-    width: 125px;
-    height: 25px;
-    padding: 5px 15px;
-    border: 1px solid rgb(128, 128, 128);
-    border-radius: 5px;    
-}
-
-.s-card:hover {
-    border: 1px solid rgb(223, 223, 223);
-    font-weight: bold;
-    animation: 0.25s p-enlarge;
-    animation-fill-mode: both;
-}
-
-/* About Me Styles */
-
-.a-section { 
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    color: white;
-    font-family: monospace;
-    max-width: 700px;
-    margin-top: 5rem;
 }
 
 .title-section {
     display: flex;
-    align-items: flex-end;
     gap: 0.5rem;
+    align-items: center;
+    border-bottom: 1px solid white;
+    margin-bottom: 1rem;
 }
 
-.a-title {
-    border-bottom: 1px solid rgb(255, 255, 255, 0.5);
+.s-section, .a-section, .p-section {
+    width: 100%;
+    margin-bottom: 3rem;
 }
 
-
-.a-para {
-    font-style: italic;
-    padding-left: 1rem;
-    border-left: 1px dashed rgb(255, 255, 255, 0.5);
+.s-stack {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
 }
 
-/* Projects Section Styles */
+.s-card {
+    display: flex;
+    gap: 0.5rem;
+    border: 1px solid white;
+    border-radius: 2px;
+    width: max-content;
+    padding: 0.5rem 1rem;
+}
 
-.p-section {
+/* About Styles */
+
+.a-stack {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    color: white;
-    font-family: monospace;
-    max-width: 700px;
-    margin-top: 5rem;
 }
 
-.p-title {
-    border-bottom: 1px solid rgb(255, 255, 255, 0.5);
+.a-para {
+    border-left: 1px dashed white;
+    padding-left: 1rem;
 }
+
+/* Project Styles */
 
 .p-stack {
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    align-items: center;
     flex-wrap: wrap;
+    gap: 2rem;
 }
 
 .p-block {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    border-left: 1px dashed rgb(255, 255, 255, 0.5);
-    border-right: 1px dashed rgb(255, 255, 255, 0.5);
+    overflow: hidden;
+    /* border-left: 1px dashed white;
     padding-left: 1rem;
-    padding-right: 1rem;
+    border-right: 1px dashed white;
+    padding-right: 1rem; */
 }
 
 .p-card-title {
-    border-bottom: 1px solid rgb(255, 255, 255, 0.5);
+    border-bottom: 1px solid white;
 }
 
 .p-card {
-    display: flex;
-    flex-direction: column;
-    border: 1px solid rgb(128, 128, 128);
-    width: 175px;
-    height: max-content;
-    overflow: hidden;
+    border-left: 1px dashed white;
+    padding-left: 1rem;
+    border-right: 1px dashed white;
+    padding-right: 1rem;
 }
 
 .p-img {
-    display: flex;
-    width: 100%;
+    max-width: 16rem;
+    border: 1px solid rgb(128, 128, 128);
 }
 
-.p-card:hover {
-    border: 1px dashed white;
-    animation: 0.25s p-enlarge;
-    animation-fill-mode: both;
-    animation-direction: alternate;
+footer {
+    justify-content: center;
+    padding-bottom: 1rem;
 }
 
-.footerIcon:hover {
-    animation: 0.25s fi-enlarge;
-    animation-fill-mode: both;
-}
-
-@media (max-width: 1000px) {
-    .a-img {
-        width: 125px;
-        animation: 1.5s fadein
-    }
-
-    header {
-        padding-top: 1rem
-    }
-
-    .logo {
-        animation: 1.5s fadein
-    }
-
-    .h-descriptor {
-        text-align: center;
-        font-size: 0.8rem;
-    }
-
-    .h-code {
-        text-align: center;
-        margin: 1rem;
-
-    }
-
-    .h-code, .descriptor {
-        animation: 1.5s fadein;
-    }
-
-    .blurb {
-        margin-top: 2rem;
-        text-align: center;
-        width: 80%;
-    }
-
-    h3 {
-        font-size: 0.8rem;
-    }
-
-    h5 {
-        font-size: 0.7rem;
-        text-align: center;
-    }    
-}
-
-/* ANIMATIONS LIST */
-
-@keyframes p-enlarge {
-    100% {
-        transform: scale(1.025);
-    }
-}
-
-@keyframes fi-enlarge {
-    100% {
-        transform: scale(1.2);
-    }
-}
-
-@keyframes slidein {
-    0% {
-        transform: translate(0, -1000px);
-        text-shadow: 0px 0px rgb(143, 143, 143);
-    }
-
-    30% {
-        transform: translate(0, 0);
-        text-shadow: 0px 0px rgb(143, 143, 143);
-    }
-
-    60% {
-        text-shadow: 5px 5px rgb(143, 143, 143);
-    }
-}
-
-@keyframes fadein {
-    0% {
-        opacity: 0%;
-    }
-
-    100% {
-        opacity: 100%;
-    }
-}
-
-@keyframes spawn {
-    0% {
-        transform: skew(100deg)
-    }
-    75% {
-        transform: skew(0deg)
-    }
-}
-
-@keyframes breathing {
-    0% {
-        opacity: 1;
-    }
-
+@keyframes c-breathing {
     50% {
-        opacity: 0.5;
+        opacity: 0;
     }
 
     100% {
         opacity: 1;
-    }
-}
-
-@keyframes fastBreathing {
-    0% {
-        opacity: 1;
-    }
-
-    50% {
-        opacity: 0.1;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes fadeaway {
-    to {
-        opacity: 0%;
-    }
-}
-
-@keyframes fadein {
-    from {
-        opacity: 0%;
-    }
-    to {
-        opacity: 100%;
     }
 }
