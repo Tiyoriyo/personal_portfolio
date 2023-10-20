@@ -5,6 +5,7 @@ import avatar from './assets/avatar.jpg';
 // import arrowDown from './assets/scrollDown.png';
 
 // Project Images
+import cv from './assets/Screenshots/cv.png';
 import todo from './assets/Screenshots/todo.png';
 import admin from './assets/Screenshots/admin.png';
 import battleship from './assets/Screenshots/battleship.png';
@@ -23,6 +24,7 @@ avatarImg.src = avatar;
 // scrollImg.src = arrowDown
 
 //Project Image Injection
+const cvImg = document.querySelector('.p-cv');
 const todoImg = document.querySelector('.p-todo');
 const adminImg = document.querySelector('.p-admin');
 const battleshipImg = document.querySelector('.p-battleship');
@@ -32,6 +34,7 @@ const restaurantImg = document.querySelector('.p-restaurant');
 const signupImg = document.querySelector('.p-signup');
 const ticImg = document.querySelector('.p-tic');
 const weatherImg = document.querySelector('.p-weather');
+cvImg.src = cv
 todoImg.src = todo;
 adminImg.src = admin;
 battleshipImg.src = battleship;
@@ -41,18 +44,6 @@ restaurantImg.src = restaurant;
 signupImg.src = signup;
 ticImg.src = tic;
 weatherImg.src = weather;
-
-// Scroll Down Container
-const scrollCont = document.querySelector('.s-container');
-
-// window.addEventListener('scroll', () => {
-//    const scrollCheck = (document.scrollingElement.scrollTop > 0) ? true : false;
-//    if (scrollCheck) {
-//     scrollCont.classList.add('scrollActive');
-//    } else {
-//     scrollCont.classList.remove('scrollActive');
-//    }
-// });
 
 
 document.body.style.display = 'flex';
